@@ -7,9 +7,9 @@ An example of how to implement this can be found in the GeocoderController class
 ## installation
 git clone https://github.com/devabuse/googlemaps_geocoder
  
- ## settings.local.php
+## settings.local.php
  
- You need to set the following:
+ You need to set the following in your settings.local file for this module to function:
  
  ```
 // url of the geocoder service
