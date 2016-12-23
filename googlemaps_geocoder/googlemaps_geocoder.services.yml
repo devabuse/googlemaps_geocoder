@@ -1,0 +1,13 @@
+services:
+    googlemaps_geocoder.credentials:
+        class: Drupal\googlemaps_geocoder\API\Credentials
+        arguments: ['@settings']
+    googlemaps_geocoder.coordinates:
+        class: Drupal\googlemaps_geocoder\Model\Coordinates
+        arguments: ['@entity_type.manager', '@entity.query']
+    googlemaps_geocoder.googlemaps:
+        class: Drupal\googlemaps_geocoder\API\GoogleMaps
+        arguments: ['@googlemaps_geocoder.credentials', '@http_client']
+    googlemaps_geocoder.geocoder:
+        class: Drupal\googlemaps_geocoder\Geocoder\Geocoder
+        arguments: ['@googlemaps_geocoder.googlemaps']

@@ -1,0 +1,5 @@
+name: Googlemaps geocoder
+type: module
+description: Geocode module
+core: 8.x
+package: Googlemaps
