@@ -2,6 +2,8 @@
 
 This module creates services for use in other modules to connect with the google geocoder API. It also enables a route and permission that returns coords.
 
+An example of how to implement this can be found in the GeocoderController class. 
+
 ## installation
 git clone https://github.com/devabuse/googlemaps_geocoder
  

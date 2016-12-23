@@ -1,1 +1,19 @@
 <?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function googlemaps_geocoder_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        // Main module help for the render_menu module.
+        case 'help.page.googlemaps_geocoder':
+            $output = '';
+            $output .= '<h3>' . t('Googlemaps Geocoder') . '</h3>';
+            $output .= '<p>' . t('Provide services and an API to request coordinates from a given address using google\'s geocoder API.') . '</p>';
+            return $output;
+
+        default:
+    }
+}

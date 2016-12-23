@@ -1,0 +1,8 @@
+googlemaps_geocoder.api:
+  path: '/api/googlemaps_geocoder/{address}'
+  defaults:
+    _controller: '\Drupal\googlemaps_geocoder\Controller\GeocoderController::getAction'
+    _title: 'Googlemaps Geocoder API'
+  requirements:
+    _permission: 'access geocoder post api'
+  _method: 'GET'

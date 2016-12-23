@@ -1,0 +1,4 @@
+access geocoder post api:
+  title: 'Access geocoder POST api'
+  description: 'Provide access to the API provided by this module'
+  restrict access: TRUE
